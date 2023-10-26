@@ -182,6 +182,13 @@ declare module 'astro:content' {
   collection: "work";
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] };
+"duvet-genius.md": {
+	id: "duvet-genius.md";
+  slug: "duvet-genius";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
 "h20.md": {
 	id: "h20.md";
   slug: "h20";
@@ -192,13 +199,6 @@ declare module 'astro:content' {
 "markdown-mystery-tour.md": {
 	id: "markdown-mystery-tour.md";
   slug: "markdown-mystery-tour";
-  body: string;
-  collection: "work";
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] };
-"nested/duvet-genius.md": {
-	id: "nested/duvet-genius.md";
-  slug: "nested/duvet-genius";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
