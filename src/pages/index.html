@@ -2,37 +2,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Index page</title>
+    <title>Johannes Drechsler: Personal Site</title>
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
 
-  <body class="p-0 m-0">
+  <style>
+    .background {
+      background-image: url('/src/assets/bg.svg');
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      backdrop-filter: blur(50px);
+    }
+  </style>
+
+  <body class="p-0 m-0 background">
     <include src="components/Nav.html"></include>
 
-    <main class="bg-gray-100 px-4 flex flex-col gap-16 pt-16 md:px-10 lg:px-24">
+    <main class="flex flex-col gap-16">
       <include src="components/Hero.html"></include>
-
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h2 class="mb-4 text-xl font-bold">Strategy-Minded</h2>
-          <p class="text-gray-600">
-            More than 11 years of experience as a Full Stack Software Engineer.
-          </p>
-          <p class="mt-4">
-            I have worked with all the popular JS frameworks professionally.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h2 class="mb-4 text-xl font-bold">Performance Oriented</h2>
-          <p class="text-gray-600">Love creating high-performance apps.</p>
-          <p class="mt-4">
-            I imagine creating apps like painting a picture. Instant previews
-            and no wait.
-          </p>
-        </div>
-      </div>
-
+      <include src="components/SoftSkills.html"></include>
       <include src="components/WorkingTogether.html"></include>
     </main>
 
