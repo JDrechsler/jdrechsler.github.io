@@ -4,7 +4,6 @@ import posthtml from '@vituum/vite-plugin-posthtml'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default {
-  base: '/jdrechsler.github.io/',
   build: {
     assetsDir: 'media',
     copyPublicDir: false,
