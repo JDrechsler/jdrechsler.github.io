@@ -1,4 +1,7 @@
-<!-- TODO: make year dynamic -->
+---
+const currentYear = new Date().getFullYear()
+---
+
 <footer>
   <div
     class="p-8 text-[#6474a2] flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:items-baseline"
@@ -10,7 +13,7 @@
         Designed & Developed in Valencia, Spain
         <span class="text-xl">&#127774;</span>
       </p>
-      <p>© 2024 Johannes Drechsler</p>
+      <p>© {currentYear} Johannes Drechsler</p>
     </div>
     <ul class="flex items-center justify-center gap-x-5 gap-y-1 flex-wrap">
       <li><a href="https://github.com/JDrechsler">GitHub</a></li>
