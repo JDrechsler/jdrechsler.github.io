@@ -1,63 +1,83 @@
-<section
-  class="flex flex-col gap-5 w-full mx-auto px-[1.5rem] max-w-[83rem] text-lg text-[#3d4663] md:text-xl md:gap-10"
->
-  <p class="text-red-900 text-base">
-    I am definifely not a writer but I will try my best 😉
-  </p>
-  <div class="grid gap-2 items-start lg:grid-cols-[200px,auto]">
-    <h2 class="text-[26px] text-[#090b11] font-semibold">Background</h2>
-    <ul class="grid gap-2">
-      <li>🇩🇪</li>
-      <li>🇺🇲</li>
-      <li>🇪🇸</li>
-    </ul>
+<section class="flex flex-col gap-10 w-full mx-auto px-[1.5rem] max-w-[83rem] text-lg text-[#3d4663] md:text-xl">
+  <div class="grid gap-8 items-start lg:grid-cols-[250px,1fr] bg-white rounded-2xl p-8 shadow-lg">
+    <h2 class="text-3xl text-[#090b11] font-bold bg-gradient-to-r from-[#090b11] to-accent bg-clip-text text-transparent">Background</h2>
+    <div class="space-y-4">
+      <p class="flex items-center gap-3">
+        <span class="text-2xl">🇩🇪</span>
+        Born and raised in Germany, where my journey in technology began
+      </p>
+      <p class="flex items-center gap-3">
+        <span class="text-2xl">🇺🇲</span>
+        Expanded my horizons in the United States, gaining valuable international experience
+      </p>
+      <p class="flex items-center gap-3">
+        <span class="text-2xl">🇪🇸</span>
+        Currently based in beautiful Valencia, Spain, where I continue to grow and innovate
+      </p>
+    </div>
   </div>
-  <div class="grid gap-2 items-start lg:grid-cols-[200px,auto]">
-    <h2 class="text-[26px] text-[#090b11] font-semibold">Education</h2>
-    <ul class="grid gap-2">
-      <li>
-        I received my degree in Computer Science (Major: System Integration)
-        from the BSZ7 Leipzig in 2015.
-      </li>
-      <li>
-        I did a 6 months nanodegree with the Google Chrome Developer team (on
-        Udacity) to become a certified Mobile Web Specialist. I learned deep
-        knowledge about PWAs, performance, accessibility, browser rendering
-        pipeline and more.
-      </li>
-      <li>
-        I also did a lot of courses to even further my knowledge because I want
-        to know the ins and outs of the web.
 
-        <ul>
-          <li class="font-semibold">
-            👉🏻 Find all the courses I did on my LinkedIn profile:
-            <a href="https://www.linkedin.com/in/jdrechslerus">Linkedin</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <div class="grid gap-8 items-start lg:grid-cols-[250px,1fr] bg-white rounded-2xl p-8 shadow-lg">
+    <h2 class="text-3xl text-[#090b11] font-bold bg-gradient-to-r from-[#090b11] to-accent bg-clip-text text-transparent">Education</h2>
+    <div class="space-y-6">
+      <div class="p-6 rounded-xl bg-gray-50">
+        <h3 class="font-semibold text-xl mb-2">Computer Science Degree</h3>
+        <p>BSZ7 Leipzig (2015) - Major: System Integration</p>
+      </div>
+      
+      <div class="p-6 rounded-xl bg-gray-50">
+        <h3 class="font-semibold text-xl mb-2">Google Chrome Mobile Web Specialist</h3>
+        <p>6-month intensive nanodegree program focused on PWAs, performance optimization, and modern web development practices</p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-gray-50">
+        <h3 class="font-semibold text-xl mb-2">Continuous Learning</h3>
+        <p>Constantly expanding my knowledge through various courses and certifications</p>
+        <a href="https://www.linkedin.com/in/jdrechslerus" class="inline-flex items-center gap-2 mt-3 text-accent hover:text-[#090b11] transition-colors">
+          View my complete education history on LinkedIn
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 7l10 10M7 17V7h10"/>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="grid gap-2 items-start lg:grid-cols-[200px,auto]">
-    <h2 class="text-[26px] text-[#090b11] font-semibold">Skills</h2>
-    <ul class="grid gap-2">
-      <li>
-        Lots and lots since Full-Stack Software Engineering will make you learn
-        lots and lots of tools. 😂
-      </li>
-    </ul>
-  </div>
-  <div class="grid gap-2 items-start lg:grid-cols-[200px,auto]">
-    <h2 class="text-[26px] text-[#090b11] font-semibold">Hobbies</h2>
-    <ul class="grid grid-flow-col gap-2">
-      <li>🥁</li>
-      <li>🎸</li>
-      <li>🎮</li>
-      <li>🏄‍♂️</li>
-      <li>🏂</li>
-      <li>🚴‍♂️</li>
-      <li>🏋️‍♂️</li>
-      <li>🏃‍♂️</li>
-    </ul>
+
+  <div class="grid gap-8 items-start lg:grid-cols-[250px,1fr] bg-white rounded-2xl p-8 shadow-lg">
+    <h2 class="text-3xl text-[#090b11] font-bold bg-gradient-to-r from-[#090b11] to-accent bg-clip-text text-transparent">Hobbies</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🥁</span>
+        <span class="font-medium">Drums</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🎸</span>
+        <span class="font-medium">Guitar</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🎮</span>
+        <span class="font-medium">Gaming</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🏄‍♂️</span>
+        <span class="font-medium">Surfing</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🏂</span>
+        <span class="font-medium">Snowboarding</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🚴‍♂️</span>
+        <span class="font-medium">Cycling</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🏋️‍♂️</span>
+        <span class="font-medium">Fitness</span>
+      </div>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50">
+        <span class="text-4xl">🏃‍♂️</span>
+        <span class="font-medium">Running</span>
+      </div>
+    </div>
   </div>
 </section>
