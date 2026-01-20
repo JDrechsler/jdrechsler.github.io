@@ -1,128 +1,81 @@
-<div class="w-full mx-auto px-[1.5rem] max-w-[83rem]">
-  <section
-    class="grid md:grid-cols-[6fr,4fr] gap-x-5 gap-y-5 text-center justify-center justify-items-center items-center gap-y-[2rem] gap-x-[3.75rem] md:text-left lg:px-[2.5rem]"
-  >
-    <div class="flex flex-col md:gap-5">
-      <h1
-        class="text-[42px] text-[#090b11] font-bold tracking-wider leading-[1.1] md:text-7xl"
-      >
-        Hello, my name is Johannes Drechsler!
+<div class="w-full mx-auto px-6 max-w-7xl md:px-12 lg:px-24">
+  <section class="grid lg:grid-cols-[1.1fr,0.9fr] gap-12 lg:gap-16 items-center py-8 lg:py-16">
+    <!-- Text Content -->
+    <div class="flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1">
+      <!-- Greeting badge -->
+      <div class="inline-flex items-center gap-2 self-center lg:self-start">
+        <span class="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium tracking-wide">
+          Full-Stack Engineer
+        </span>
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-[1.1] tracking-tight">
+        Hi, I'm
+        <span class="gradient-text">Johannes</span>
+        <br class="hidden sm:block" />
+        Drechsler
       </h1>
-      <p
-        class="text-xl max-w-[37ch] mx-auto md:mx-0 text-[#3d4663] max-w-3xl !leading-[39px] md:text-[26px]"
-      >
-        I am a Full-Stack Software Engineer with a passion for delivering
-        high-quality, performant, and accessible user experiences.
+
+      <!-- Subtitle -->
+      <p class="text-lg md:text-xl text-muted max-w-xl mx-auto lg:mx-0 leading-relaxed">
+        Building high-performance, accessible web experiences with 10+ years of expertise. Passionate about clean code and user-centric solutions.
       </p>
-      <ul class="hidden gap-5 md:flex">
-        <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 256 256"
-            aria-hidden="true"
-            stroke="currentcolor"
-            fill="currentcolor"
-          >
-            <g>
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-                d="m64 88-48 40 48 40m128-80 48 40-48 40M160 40 96 216"></path>
-            </g></svg
-          ><span>Developer</span>
+
+      <!-- Role tags -->
+      <ul class="flex flex-wrap justify-center lg:justify-start gap-3 mt-2">
+        <li class="group flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/80 backdrop-blur-sm border border-secondary/10 shadow-soft hover:shadow-warm hover:border-primary/20 transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span class="font-medium text-secondary">Developer</span>
         </li>
-        <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 256 256"
-            aria-hidden="true"
-            stroke="currentcolor"
-            fill="currentcolor"
-          >
-            <g>
-              <circle
-                cx="168"
-                cy="88"
-                r="64"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"></circle>
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-                d="m213.3 133.3-90.6-90.6M100 156l-12 12m16.8-70.1L28.1 202.5a7.9 7.9 0 0 0 .8 10.4l14.2 14.2a7.9 7.9 0 0 0 10.4.8l104.6-76.7"
-              ></path>
-            </g></svg
-          ><span>Musician</span>
+        <li class="group flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/80 backdrop-blur-sm border border-secondary/10 shadow-soft hover:shadow-warm hover:border-primary/20 transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+          <span class="font-medium text-secondary">Musician</span>
         </li>
-        <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            stroke="currentcolor"
-            fill="currentcolor"
-            viewBox="0 0 256 256"
-            aria-hidden="true"
-          >
-            <g>
-              <circle
-                cx="68"
-                cy="188"
-                r="28"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"></circle>
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-                d="m40 72 40 40m0-40-40 40m136 56 40 40m0-40-40 40M136 80V40h40"
-              ></path>
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-                d="m136 40 16 16c40 40 8 88-24 96"></path>
-            </g>
-            <linearGradient
-              id="icon-gradient-2fw5qr68a"
-              x1="23"
-              x2="235"
-              y1="43"
-              y2="202"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="var(--gradient-stop-1)"></stop>
-              <stop offset=".5" stop-color="var(--gradient-stop-2)"></stop>
-              <stop offset="1" stop-color="var(--gradient-stop-3)"></stop>
-            </linearGradient></svg
-          ><span>Tinker</span>
+        <li class="group flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/80 backdrop-blur-sm border border-secondary/10 shadow-soft hover:shadow-warm hover:border-primary/20 transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+          <span class="font-medium text-secondary">Tinker</span>
         </li>
       </ul>
+
+      <!-- CTA buttons -->
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
+        <a href="/work" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-warm hover:shadow-lift hover:scale-[1.02] transition-all duration-300">
+          View My Work
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="/about" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/80 backdrop-blur-sm border border-secondary/15 text-secondary font-semibold hover:bg-white hover:shadow-soft transition-all duration-300">
+          About Me
+        </a>
+      </div>
     </div>
-    <img
-      class="bg-gray-100 rounded-[4.5rem] shadow-md object-cover w-[400px] max-h-[420px] md:w-[480px] md:max-h-none"
-      src="/assets/profile.jpg"
-      alt="Myself in Daytona Beach, Florida"
-    />
+
+    <!-- Image -->
+    <div class="relative order-1 lg:order-2">
+      <!-- Decorative elements -->
+      <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+      <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-sage/30 rounded-full blur-3xl"></div>
+
+      <!-- Image container with organic shape -->
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-sage/20 rounded-[3rem] rotate-3 scale-[1.02]"></div>
+        <img
+          class="relative rounded-[2.5rem] shadow-lift object-cover w-full max-w-md mx-auto aspect-[4/5] hover:scale-[1.01] transition-transform duration-500"
+          src="/assets/profile.jpg"
+          alt="Johannes Drechsler"
+        />
+      </div>
+    </div>
   </section>
 </div>

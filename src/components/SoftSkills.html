@@ -1,153 +1,77 @@
-<div class="w-full mx-auto px-[1.5rem] max-w-[83rem]">
-  <section class="lg:px-[2.5rem]">
-    <ul
-      class="grid grid-flow-row gap-y-10 gap-x-10 text-left shadow-md place-self-stretch p-6 rounded-xl border md:grid-flow-col xl:p-10"
-    >
-      <li class="flex flex-col gap-y-1 md:gap-y-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 256 256"
-          aria-hidden="true"
-          stroke="url(#icon-gradient-19h6ynwbr)"
-          fill="url(#icon-gradient-19h6ynwbr)"
-        >
-          <g>
-            <circle
-              cx="68"
-              cy="188"
-              r="28"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></circle>
-            <path
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-              d="m40 72 40 40m0-40-40 40m136 56 40 40m0-40-40 40M136 80V40h40"
-            ></path>
-            <path
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-              d="m136 40 16 16c40 40 8 88-24 96"
-            ></path>
-          </g>
-          <linearGradient
-            id="icon-gradient-19h6ynwbr"
-            x1="23"
-            x2="235"
-            y1="43"
-            y2="202"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#96b0bb"></stop>
-            <stop offset="1"></stop>
-            <stop offset="0.7"></stop>
-          </linearGradient>
+<div class="w-full mx-auto px-6 max-w-7xl md:px-12 lg:px-24 py-16">
+  <!-- Section header -->
+  <div class="text-center mb-12">
+    <span class="text-primary font-medium tracking-wide text-sm uppercase">What I Bring</span>
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary mt-2">My Approach</h2>
+  </div>
+
+  <!-- Bento grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Strategy card - featured -->
+    <div class="group md:col-span-2 lg:col-span-1 lg:row-span-2 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8 border border-primary/10 hover:border-primary/20 transition-all duration-300 card-hover">
+      <div class="h-full flex flex-col">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 shadow-warm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-secondary mb-4">Strategy-Minded</h3>
+        <p class="text-muted leading-relaxed flex-grow">
+          Throughout my extensive experience as a Full-Stack Software Engineer, I've worked with all the popular JS frameworks. But I believe in using the right tool for the job - not just the most popular one. Thoughtful architecture decisions lead to better products.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/60 text-secondary rounded-full">React</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/60 text-secondary rounded-full">Angular</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/60 text-secondary rounded-full">Vue</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/60 text-secondary rounded-full">Node.js</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Performance card -->
+    <div class="group bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-secondary/5 hover:border-accent/20 hover:bg-white/80 transition-all duration-300 card-hover">
+      <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
         </svg>
-        <p
-          class="text-xl leading-[1.1] xl:text-3xl font-semibold tracking-wide"
-        >
-          Strategy-Minded
-        </p>
-        <p class="text-[#3d4663]">
-          Throughout my extensive experience as a Full-Stack Software Engineer,
-          I have worked with all the popular JS frameworks. I love JS but
-          sometimes it is not necessary to use it. I am not a fan of using a
-          framework just because it is popular. I like to use the right tool for
-          the job.
-        </p>
-      </li>
-      <li class="flex flex-col gap-y-1 md:gap-y-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 256 256"
-          aria-hidden="true"
-          stroke="url(#icon-gradient-19h6ynwbr)"
-          fill="url(#icon-gradient-19h6ynwbr)"
-        >
-          <g>
-            <path
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-              d="M94.1 184.6c-11.4 33.9-56.6 33.9-56.6 33.9s0-45.2 33.9-56.6m124.5-56.5L128 173.3 82.7 128l67.9-67.9C176.3 34.4 202 34.7 213 36.3a7.8 7.8 0 0 1 6.7 6.7c1.6 11 1.9 36.7-23.8 62.4Z"
-            ></path>
-            <path
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-              d="M184.6 116.7v64.6a8 8 0 0 1-2.4 5.6l-32.3 32.4a8 8 0 0 1-13.5-4.1l-8.4-41.9m11.3-101.9H74.7a8 8 0 0 0-5.6 2.4l-32.4 32.3a8 8 0 0 0 4.1 13.5l41.9 8.4"
-            ></path>
-          </g>
+      </div>
+      <h3 class="text-xl font-bold text-secondary mb-3">Performance Oriented</h3>
+      <p class="text-muted text-sm leading-relaxed">
+        I imagine creating apps like painting a picture - without friction or refreshes. Instant previews and no wait. I'm building my own tools to achieve this seamless workflow.
+      </p>
+    </div>
+
+    <!-- Accessibility card -->
+    <div class="group bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-secondary/5 hover:border-sage/30 hover:bg-white/80 transition-all duration-300 card-hover">
+      <div class="w-12 h-12 rounded-xl bg-sage/10 flex items-center justify-center mb-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="10" r="3"></circle>
+          <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
         </svg>
-        <p
-          class="text-xl leading-[1.1] xl:text-3xl font-semibold tracking-wide"
-        >
-          Performance Oriented
-        </p>
-        <p class="text-[#3d4663]">
-          I love performance. I imagine creating apps like painting a picture.
-          Without friction or refreshes or losing focus. Instant previews and no
-          wait. The current tooling system does not allow for such a workflow
-          which is why I am experimenting with creating my own framework | build
-          | tool workflow that will allow me to create apps like painting a
-          picture.
-        </p>
-      </li>
-      <li class="flex flex-col gap-y-1 md:gap-y-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 256 256"
-          aria-hidden="true"
-          stroke="url(#icon-gradient-19h6ynwbr)"
-          fill="url(#icon-gradient-19h6ynwbr)"
-        >
-          <g>
-            <path
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-              d="m80 96 40 32-40 32m56 0h40"
-            ></path>
-            <rect
-              width="192"
-              height="160"
-              x="32"
-              y="48"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16.97"
-              rx="8.5"
-            ></rect>
-          </g>
-        </svg>
-        <p
-          class="text-xl xl:text-3xl font-semibold leading-[1.1] tracking-wide"
-        >
-          Accessibility Focused
-        </p>
-        <p class="text-[#3d4663]">
-          I did a 6-months Nanodegree with the Google Chrome engineers learning
-          about the importance of accessibility and how to make websites
-          accessible. I make sure that all my websites are accessible and user
-          friendly.
-        </p>
-      </li>
-    </ul>
-  </section>
+      </div>
+      <h3 class="text-xl font-bold text-secondary mb-3">Accessibility Focused</h3>
+      <p class="text-muted text-sm leading-relaxed">
+        Certified by Google Chrome engineers in a 6-month nanodegree. I ensure all my websites are accessible and user-friendly for everyone.
+      </p>
+    </div>
+
+    <!-- Stats row -->
+    <div class="md:col-span-2 grid grid-cols-3 gap-4">
+      <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 text-center border border-secondary/5 hover:shadow-soft transition-all duration-300">
+        <p class="text-3xl md:text-4xl font-bold gradient-text">10+</p>
+        <p class="text-muted text-sm mt-1">Years Experience</p>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 text-center border border-secondary/5 hover:shadow-soft transition-all duration-300">
+        <p class="text-3xl md:text-4xl font-bold gradient-text">50+</p>
+        <p class="text-muted text-sm mt-1">Projects Delivered</p>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 text-center border border-secondary/5 hover:shadow-soft transition-all duration-300">
+        <p class="text-3xl md:text-4xl font-bold gradient-text">3</p>
+        <p class="text-muted text-sm mt-1">Countries Worked</p>
+      </div>
+    </div>
+  </div>
 </div>
