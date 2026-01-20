@@ -1,15 +1,18 @@
 ---
 const currentPath = Astro.url.pathname
 const isActive = (path) => currentPath === path
-const baseLinkClasses = 'relative px-4 py-2 text-sm font-semibold transition'
-const activeLinkClasses = 'text-[#0c111f]'
-const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
+const baseLinkClasses = 'px-4 py-2 text-sm font-semibold transition rounded-full'
+const activeLinkClasses = 'bg-white text-[#2f3447] shadow-sm'
+const inactiveLinkClasses = 'text-[#63657a] hover:text-[#2f3447]'
 ---
 
 <nav
-  class="relative z-40 mx-auto mt-6 flex w-[min(92rem,92%)] items-center justify-between rounded-[1.75rem] border border-white/70 bg-white/70 px-6 py-4 shadow-[0_20px_40px_rgba(15,23,42,0.08)] backdrop-blur-xl"
+  class="relative z-40 mx-auto mt-6 flex w-[min(92rem,92%)] items-center justify-between rounded-[2.5rem] border border-white/70 bg-white/65 px-6 py-4 shadow-[0_24px_48px_rgba(34,33,45,0.08)] backdrop-blur-xl"
 >
   <div class="flex items-center gap-3">
+    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#f08a5d] to-[#f7b267] text-sm font-semibold text-white shadow-sm">
+      JD
+    </div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -50,7 +53,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <stop offset="0.5"></stop>
       </linearGradient>
     </svg>
-    <span class="font-semibold text-base tracking-wide md:text-lg">
+    <span class="font-semibold text-base tracking-wide text-[#2f3447] md:text-lg">
       Johannes Drechsler
     </span>
   </div>
@@ -77,13 +80,16 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
       </svg>
     </summary>
     <div
-      class="absolute left-0 top-full z-50 mt-3 flex w-full flex-col rounded-2xl border border-white/60 bg-white/90 shadow-xl backdrop-blur-xl"
+      class="absolute left-0 top-full z-50 mt-3 flex w-full flex-col rounded-3xl border border-white/70 bg-white/90 shadow-xl backdrop-blur-xl"
     >
       <ul class="flex flex-col gap-2 p-5">
         <li>
           <a
             href="/"
-            class="text-lg font-semibold text-[#0b0f1a]"
+            class:list={[
+              'text-lg font-semibold rounded-full px-4 py-2',
+              isActive('/') ? 'bg-white text-[#2f3447] shadow-sm' : 'text-[#2f3447]'
+            ]}
             aria-current={isActive('/') ? 'page' : undefined}
           >
             Home
@@ -92,7 +98,10 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <li>
           <a
             href="/work"
-            class="text-lg font-semibold text-[#0b0f1a]"
+            class:list={[
+              'text-lg font-semibold rounded-full px-4 py-2',
+              isActive('/work') ? 'bg-white text-[#2f3447] shadow-sm' : 'text-[#2f3447]'
+            ]}
             aria-current={isActive('/work') ? 'page' : undefined}
           >
             Work
@@ -101,7 +110,10 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <li>
           <a
             href="/about"
-            class="text-lg font-semibold text-[#0b0f1a]"
+            class:list={[
+              'text-lg font-semibold rounded-full px-4 py-2',
+              isActive('/about') ? 'bg-white text-[#2f3447] shadow-sm' : 'text-[#2f3447]'
+            ]}
             aria-current={isActive('/about') ? 'page' : undefined}
           >
             About
@@ -113,7 +125,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <li>
           <a
             href="https://github.com/JDrechsler"
-            class="transition-colors hover:text-gray-500"
+            class="rounded-full border border-white/70 bg-white/80 p-2 transition hover:-translate-y-0.5"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -163,7 +175,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <li>
           <a
             href="https://www.linkedin.com/in/jdrechslerus"
-            class="transition-colors hover:text-gray-500"
+            class="rounded-full border border-white/70 bg-white/80 p-2 transition hover:-translate-y-0.5"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -198,7 +210,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         <li>
           <a
             href="https://twitter.com/JDrechslerUS"
-            class="transition-colors hover:text-gray-500"
+            class="rounded-full border border-white/70 bg-white/80 p-2 transition hover:-translate-y-0.5"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -223,7 +235,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
       </ul>
     </div>
   </details>
-  <ul class="hidden items-center gap-6 md:flex">
+  <ul class="hidden items-center gap-2 rounded-full border border-white/70 bg-white/70 px-2 py-1 md:flex">
     <li
       class:list={[
         baseLinkClasses,
@@ -236,9 +248,6 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         aria-current={isActive('/') ? 'page' : undefined}
       >
         Home
-        {isActive('/') && (
-          <span class="absolute left-0 -bottom-2 h-1 w-full rounded-full bg-[#0c111f]"></span>
-        )}
       </a>
     </li>
     <li
@@ -253,9 +262,6 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         aria-current={isActive('/work') ? 'page' : undefined}
       >
         Work
-        {isActive('/work') && (
-          <span class="absolute left-0 -bottom-2 h-1 w-full rounded-full bg-[#0c111f]"></span>
-        )}
       </a>
     </li>
     <li
@@ -270,23 +276,20 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
         aria-current={isActive('/about') ? 'page' : undefined}
       >
         About
-        {isActive('/about') && (
-          <span class="absolute left-0 -bottom-2 h-1 w-full rounded-full bg-[#0c111f]"></span>
-        )}
       </a>
     </li>
   </ul>
   <div class="hidden items-center gap-3 md:flex">
     <a
       href="mailto:JohannesDrechslerUS@gmail.com"
-      class="rounded-full border border-white/60 bg-white/80 px-4 py-2 text-sm font-semibold text-[#0c111f] shadow-sm transition hover:-translate-y-0.5"
+      class="rounded-full border border-white/70 bg-white/80 px-4 py-2 text-sm font-semibold text-[#2f3447] shadow-sm transition hover:-translate-y-0.5"
     >
       Contact
     </a>
     <div class="flex items-center gap-2">
       <a
         href="https://github.com/JDrechsler"
-        class="rounded-full border border-white/60 bg-white/70 p-2 transition hover:-translate-y-0.5"
+        class="rounded-full border border-white/70 bg-white/70 p-2 transition hover:-translate-y-0.5"
         aria-label="GitHub"
       ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +338,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
       </a>
       <a
         href="https://www.linkedin.com/in/jdrechslerus"
-        class="rounded-full border border-white/60 bg-white/70 p-2 transition hover:-translate-y-0.5"
+        class="rounded-full border border-white/70 bg-white/70 p-2 transition hover:-translate-y-0.5"
         aria-label="LinkedIn"
       ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +372,7 @@ const inactiveLinkClasses = 'text-[#4a5162] hover:text-[#0c111f]'
       </a>
       <a
         href="https://twitter.com/JDrechslerUS"
-        class="rounded-full border border-white/60 bg-white/70 p-2 transition hover:-translate-y-0.5"
+        class="rounded-full border border-white/70 bg-white/70 p-2 transition hover:-translate-y-0.5"
         aria-label="X (Twitter)"
       ><svg
           xmlns="http://www.w3.org/2000/svg"

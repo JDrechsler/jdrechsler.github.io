@@ -22,7 +22,7 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body class="p-0 m-0 background text-[#0c111f]">
+  <body class="p-0 m-0 background text-[#2f3447]">
     <Nav />
     <slot />
     <Footer />
@@ -30,23 +30,23 @@ const { title } = Astro.props
 </html>
 <style is:global>
   .background {
-    background-color: #f3f4f8;
+    background-color: #fbf6ef;
     background-image: radial-gradient(
-        90rem 40rem at 15% -10%,
-        rgba(38, 98, 255, 0.18),
+        60rem 30rem at 20% -10%,
+        rgba(255, 210, 182, 0.55),
         transparent 60%
       ),
       radial-gradient(
-        60rem 30rem at 95% 15%,
-        rgba(255, 140, 120, 0.18),
-        transparent 55%
+        60rem 34rem at 90% 15%,
+        rgba(255, 199, 160, 0.35),
+        transparent 60%
       ),
       radial-gradient(
-        50rem 26rem at 20% 90%,
-        rgba(80, 201, 170, 0.16),
-        transparent 55%
+        48rem 28rem at 70% 75%,
+        rgba(255, 224, 196, 0.4),
+        transparent 60%
       ),
-      linear-gradient(180deg, #f7f8fc 0%, #eef0f6 55%, #f7f8fc 100%);
+      linear-gradient(180deg, #fdf9f4 0%, #f7f1e9 65%, #fdf9f4 100%);
     background-attachment: fixed;
   }
 </style>
