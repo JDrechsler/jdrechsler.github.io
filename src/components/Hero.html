@@ -1,22 +1,41 @@
 <div class="w-full mx-auto px-[1.5rem] max-w-[83rem]">
   <section
-    class="grid md:grid-cols-[6fr,4fr] gap-x-5 gap-y-5 text-center justify-center justify-items-center items-center gap-y-[2rem] gap-x-[3.75rem] md:text-left lg:px-[2.5rem]"
+    class="relative grid gap-10 text-center md:grid-cols-[1.15fr,0.85fr] md:text-left lg:px-[2.5rem]"
   >
-    <div class="flex flex-col md:gap-5">
+    <div class="flex flex-col gap-6">
+      <p class="text-sm font-semibold uppercase tracking-[0.4em] text-[#2f6bff]">
+        Full-stack engineer
+      </p>
       <h1
-        class="text-[42px] text-[#090b11] font-bold tracking-wider leading-[1.1] md:text-7xl"
+        class="text-[42px] font-semibold tracking-tight text-[#0b0f1a] md:text-7xl"
       >
-        Hello, my name is Johannes Drechsler!
+        Building products that feel effortless, fast, and human.
       </h1>
       <p
-        class="text-xl max-w-[37ch] mx-auto md:mx-0 text-[#3d4663] max-w-3xl !leading-[39px] md:text-[26px]"
+        class="text-lg text-[#3d4663] md:text-[22px] md:leading-[36px]"
       >
-        I am a Full-Stack Software Engineer with a passion for delivering
-        high-quality, performant, and accessible user experiences.
+        I’m Johannes Drechsler — a certified full-stack software engineer with
+        10+ years of experience crafting accessible, high-performance web
+        experiences for global teams.
       </p>
-      <ul class="hidden gap-5 md:flex">
+      <div class="flex flex-wrap items-center justify-center gap-4 md:justify-start">
+        <a
+          href="/work"
+          class="inline-flex items-center gap-2 rounded-full bg-[#0b0f1a] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/15 transition hover:-translate-y-0.5"
+        >
+          View Work
+          <span class="text-lg">→</span>
+        </a>
+        <a
+          href="/about"
+          class="inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-6 py-3 text-sm font-semibold text-[#0b0f1a] shadow-sm transition hover:-translate-y-0.5"
+        >
+          About Me
+        </a>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-3 md:justify-start">
         <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
+          class="flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-4 py-2 text-sm font-semibold text-[#0b0f1a]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +57,7 @@
           ><span>Developer</span>
         </li>
         <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
+          class="flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-4 py-2 text-sm font-semibold text-[#0b0f1a]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +88,7 @@
           ><span>Musician</span>
         </li>
         <li
-          class="bg-accent text-white font-semibold text-lg px-[1rem] py-[0.5rem] flex gap-2 items-center rounded-full"
+          class="flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-4 py-2 text-sm font-semibold text-[#0b0f1a]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +138,13 @@
         </li>
       </ul>
     </div>
-    <img
-      class="bg-gray-100 rounded-[4.5rem] shadow-md object-cover w-[400px] max-h-[420px] md:w-[480px] md:max-h-none"
-      src="/assets/profile.jpg"
-      alt="Myself in Daytona Beach, Florida"
-    />
+    <div class="relative">
+      <div class="absolute -inset-4 rounded-[3rem] bg-gradient-to-tr from-[#2f6bff]/20 via-white/10 to-[#f59e0b]/20 blur-2xl"></div>
+      <img
+        class="relative w-[420px] max-w-full rounded-[3rem] border border-white/60 bg-white/80 object-cover shadow-[0_20px_60px_rgba(15,23,42,0.2)]"
+        src="/assets/profile.jpg"
+        alt="Myself in Daytona Beach, Florida"
+      />
+    </div>
   </section>
 </div>

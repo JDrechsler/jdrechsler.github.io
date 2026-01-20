@@ -1,19 +1,19 @@
 <div class="w-full mx-auto px-[1.5rem] max-w-[83rem]">
-  <section class="grid gap-x-5 gap-y-5 text-center md:text-left justify-center justify-items-center items-center gap-y-[2rem] gap-x-[3.75rem] lg:px-[2.5rem]">
-    <div class="flex flex-col md:gap-5 max-w-4xl mx-auto">
-      <div class="space-y-2">
-        <p class="text-accent font-medium tracking-wide">FULL-STACK SOFTWARE ENGINEER</p>
-        <h1 class="text-[42px] text-[#090b11] font-bold tracking-wider leading-[1.1] md:text-7xl bg-gradient-to-r from-[#090b11] via-accent to-[#090b11] bg-clip-text text-transparent">
-          About Me
+  <section class="grid gap-10 text-center md:grid-cols-[1.1fr,0.9fr] md:text-left lg:px-[2.5rem]">
+    <div class="flex flex-col gap-6 max-w-4xl mx-auto">
+      <div class="space-y-3">
+        <p class="text-sm font-semibold uppercase tracking-[0.4em] text-[#2f6bff]">About</p>
+        <h1 class="text-[42px] font-semibold tracking-tight text-[#0b0f1a] md:text-7xl">
+          Building with clarity, momentum, and care.
         </h1>
       </div>
-      <p class="text-xl mx-auto md:mx-0 text-[#3d4663] !leading-[39px] md:text-[26px] mt-6">
+      <p class="text-lg md:text-[22px] md:leading-[36px] text-[#3d4663]">
         Certified expert full-stack software engineer with 10+ years of experience building highly performant, accessible web experiences with JavaScript, TypeScript, and modern frameworks. I lead teams, mentor developers, and love pushing the boundaries of what the web can do.
       </p>
-      <div class="mt-4 flex flex-wrap items-center gap-4">
+      <div class="flex flex-wrap items-center gap-4">
         <a
           href="https://www.linkedin.com/in/jdrechslerus"
-          class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-white text-sm font-semibold tracking-wide hover:opacity-90 transition-opacity"
+          class="inline-flex items-center gap-2 rounded-full bg-[#0b0f1a] px-5 py-2 text-white text-sm font-semibold tracking-wide shadow-lg shadow-black/15 transition hover:-translate-y-0.5"
         >
           Connect on LinkedIn
           <svg
@@ -48,15 +48,21 @@
             </g>
           </svg>
         </a>
+        <a
+          href="/work"
+          class="inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/80 px-5 py-2 text-sm font-semibold text-[#0b0f1a] shadow-sm transition hover:-translate-y-0.5"
+        >
+          Explore Work
+        </a>
       </div>
     </div>
-    <div class="relative w-full max-w-2xl group transition-all duration-300">
+    <div class="relative">
+      <div class="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-[#2f6bff]/20 via-white/10 to-[#f59e0b]/20 blur-2xl"></div>
       <img
-        class="w-full h-[420px] object-cover rounded-[2rem] shadow-xl transition-transform duration-300 group-hover:scale-[1.02]"
+        class="relative h-[420px] w-full object-cover rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_rgba(15,23,42,0.2)]"
         src="/assets/profile.jpg"
         alt="Myself in Daytona Beach, Florida"
       />
-      <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
     </div>
   </section>
 </div>

@@ -2,25 +2,30 @@
 const currentYear = new Date().getFullYear()
 ---
 
-<footer>
+<footer class="mt-16">
   <div
-    class="p-8 text-[#6474a2] flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:items-baseline"
+    class="mx-auto w-[min(92rem,92%)] rounded-[2.5rem] border border-white/60 bg-white/70 p-8 text-[#6474a2] shadow-[0_25px_60px_rgba(15,23,42,0.08)] backdrop-blur-xl"
   >
-    <div
-      class="flex flex-col items-center gap-x-2 gap-y-1 md:flex-row md:items-baseline"
-    >
-      <p>
-        Designed & Developed in Valencia, Spain
-        <span class="text-xl">&#127774;</span>
-      </p>
-      <p>© {currentYear} Johannes Drechsler</p>
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+      <div class="space-y-2 text-center lg:text-left">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#2f6bff]">Based in Valencia</p>
+        <p class="text-base text-[#0b0f1a]">
+          Designed & Developed in Valencia, Spain
+          <span class="text-xl">&#127774;</span>
+        </p>
+        <p class="text-sm">© {currentYear} Johannes Drechsler</p>
+      </div>
+      <ul class="flex flex-wrap items-center justify-center gap-4 text-sm font-semibold text-[#0b0f1a]">
+        <li>
+          <a class="rounded-full bg-white/80 px-4 py-2 shadow-sm transition hover:-translate-y-0.5" href="https://github.com/JDrechsler">GitHub</a>
+        </li>
+        <li>
+          <a class="rounded-full bg-white/80 px-4 py-2 shadow-sm transition hover:-translate-y-0.5" href="https://www.linkedin.com/in/jdrechslerus">LinkedIn</a>
+        </li>
+        <li>
+          <a class="rounded-full bg-white/80 px-4 py-2 shadow-sm transition hover:-translate-y-0.5" href="https://twitter.com/JDrechslerUS">X (Twitter)</a>
+        </li>
+      </ul>
     </div>
-    <ul class="flex items-center justify-center gap-x-5 gap-y-1 flex-wrap">
-      <li><a href="https://github.com/JDrechsler">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/jdrechslerus">LinkedIn</a></li>
-      <li>
-        <a href="https://twitter.com/JDrechslerUS">X - Formerly Twitter</a>
-      </li>
-    </ul>
   </div>
 </footer>
