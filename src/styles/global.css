@@ -111,3 +111,125 @@ a {
 .blob-sage {
   background: #81B29A;
 }
+
+/* ===== FUN ANIMATIONS ===== */
+
+/* Morphing blob animation */
+.morph-blob {
+  background: linear-gradient(135deg, #E07A5F 0%, #F4A261 50%, #81B29A 100%);
+  background-size: 200% 200%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite, gradient-rotate 6s ease infinite;
+  filter: blur(40px);
+}
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    transform: translate(10px, -10px) rotate(5deg);
+  }
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 40% 70% 50%;
+    transform: translate(-5px, 10px) rotate(-5deg);
+  }
+  75% {
+    border-radius: 40% 30% 60% 50% / 60% 70% 30% 40%;
+    transform: translate(5px, 5px) rotate(3deg);
+  }
+}
+
+@keyframes gradient-rotate {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Floating particles */
+.animate-float-particle {
+  animation: float-particle 4s ease-in-out infinite;
+}
+
+@keyframes float-particle {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-15px) translateX(5px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px) translateX(-5px);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-20px) translateX(3px);
+    opacity: 0.9;
+  }
+}
+
+/* Slow spin for decorative rings */
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Subtle rotation for background shapes */
+.animate-subtle-rotate {
+  animation: subtle-rotate 10s ease-in-out infinite;
+}
+
+@keyframes subtle-rotate {
+  0%, 100% { transform: rotate(3deg) scale(1.02); }
+  50% { transform: rotate(-2deg) scale(1.03); }
+}
+
+/* Slow pulse for icons */
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Gradient text animation */
+.animate-gradient-shift {
+  background-size: 200% auto;
+  animation: gradient-text-shift 4s ease infinite;
+}
+
+@keyframes gradient-text-shift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+/* Fade in animation */
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
