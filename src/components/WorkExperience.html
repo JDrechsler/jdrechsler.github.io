@@ -1,16 +1,16 @@
-<section class="flex flex-col gap-8 w-full mx-auto px-[1.5rem] max-w-[83rem] text-lg text-[#3d4663] md:text-xl">
+<section class="flex flex-col gap-10 w-full mx-auto px-6 max-w-7xl md:px-12 lg:px-24">
 
   <!-- Current Role Highlight -->
-  <div class="relative overflow-hidden bg-gradient-to-br from-accent/10 via-white to-accent/5 rounded-3xl p-8 md:p-12 shadow-xl border border-accent/20">
-    <div class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+  <div class="relative overflow-hidden bg-gradient-to-br from-primary/10 via-white to-accent/5 rounded-3xl p-8 md:p-12 border border-primary/15 card-hover">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
     <div class="relative">
       <div class="flex flex-wrap items-center gap-3 mb-4">
-        <span class="px-4 py-1.5 bg-accent text-white text-sm font-semibold rounded-full">Current Role</span>
-        <span class="text-gray-500">Mar 2024 - Present</span>
+        <span class="px-4 py-1.5 bg-gradient-to-r from-primary to-accent text-white text-sm font-semibold rounded-full shadow-warm">Current Role</span>
+        <span class="text-muted text-sm">Mar 2024 - Present</span>
       </div>
-      <h2 class="text-3xl md:text-4xl font-bold text-[#090b11] mb-2">Senior Frontend Engineer</h2>
-      <p class="text-xl text-accent font-semibold mb-6">YAZIO</p>
-      <p class="text-[#3d4663] leading-relaxed max-w-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-2">Senior Frontend Engineer</h2>
+      <p class="text-xl text-primary font-semibold mb-6">YAZIO</p>
+      <p class="text-muted leading-relaxed max-w-3xl">
         Building the future of health and nutrition technology. Working on highly performant React applications that help millions of users achieve their wellness goals.
       </p>
     </div>
@@ -18,42 +18,55 @@
 
   <!-- Experience Timeline -->
   <div class="space-y-2">
-    <div class="flex items-center gap-3 mb-6">
-      <p class="text-accent font-medium tracking-wide">CAREER JOURNEY</p>
-      <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="text-primary font-medium tracking-wide text-sm uppercase">Career Journey</span>
+      <div class="flex-1 h-px bg-gradient-to-r from-primary/30 to-transparent"></div>
     </div>
 
     <!-- BMW Group -->
-    <div class="group relative pl-8 pb-8 border-l-2 border-gray-200 hover:border-accent transition-colors duration-300">
-      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-white border-2 border-gray-300 group-hover:border-accent group-hover:bg-accent/20 transition-colors duration-300"></div>
-      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+    <div class="group relative pl-8 pb-8 border-l-2 border-secondary/10 hover:border-primary/40 transition-colors duration-300">
+      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-cream border-2 border-secondary/20 group-hover:border-primary group-hover:bg-primary/20 transition-colors duration-300"></div>
+      <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-secondary/5 hover:border-primary/15 hover:shadow-warm transition-all duration-300 card-hover">
         <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
           <div>
-            <h3 class="text-2xl font-bold text-[#090b11]">Full-Stack Software Engineer</h3>
-            <p class="text-accent font-semibold">BMW Group (Volke-BMW)</p>
+            <h3 class="text-xl md:text-2xl font-bold text-secondary">Full-Stack Software Engineer</h3>
+            <p class="text-primary font-semibold">BMW Group (Volke-BMW)</p>
           </div>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full whitespace-nowrap">Jan 2020 - Oct 2023</span>
+          <span class="px-3 py-1 bg-secondary/5 text-muted text-sm rounded-full whitespace-nowrap">Jan 2020 - Oct 2023</span>
         </div>
-        <p class="text-gray-500 mb-4">Greenville, South Carolina</p>
-        <ul class="space-y-3">
+        <p class="text-muted text-sm mb-4 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Greenville, South Carolina
+        </p>
+        <ul class="space-y-3 text-muted">
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-primary mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Lead frontend developer for new marketing website from scratch using Gatsby and React</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Lead developer for creating new testing pipeline using TypeScript, TestCafe, Jenkins</span>
+            <span class="text-primary mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
+            <span>Improved Lighthouse scores: Performance 45% → 97%, Accessibility 70% → 100%</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Improved Lighthouse scores dramatically: Performance 45% → 97%, Accessibility 70% → 100%</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Mentored and coached engineers, participated in design and code reviews</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-primary mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Lead fullstack developer for smart ticket platform using Angular 12 and NestJS</span>
           </li>
         </ul>
@@ -61,32 +74,49 @@
     </div>
 
     <!-- Arvato Systems - Mobile Web Specialist -->
-    <div class="group relative pl-8 pb-8 border-l-2 border-gray-200 hover:border-accent transition-colors duration-300">
-      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-white border-2 border-gray-300 group-hover:border-accent group-hover:bg-accent/20 transition-colors duration-300"></div>
-      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+    <div class="group relative pl-8 pb-8 border-l-2 border-secondary/10 hover:border-accent/40 transition-colors duration-300">
+      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-cream border-2 border-secondary/20 group-hover:border-accent group-hover:bg-accent/20 transition-colors duration-300"></div>
+      <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-secondary/5 hover:border-accent/15 hover:shadow-warm transition-all duration-300 card-hover">
         <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
           <div>
-            <h3 class="text-2xl font-bold text-[#090b11]">Software Developer / Mobile Web Specialist</h3>
+            <h3 class="text-xl md:text-2xl font-bold text-secondary">Software Developer / Mobile Web Specialist</h3>
             <p class="text-accent font-semibold">Arvato Systems North America</p>
           </div>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full whitespace-nowrap">Jul 2017 - Jan 2020</span>
+          <span class="px-3 py-1 bg-secondary/5 text-muted text-sm rounded-full whitespace-nowrap">Jul 2017 - Jan 2020</span>
         </div>
-        <p class="text-gray-500 mb-4">Greenville, South Carolina</p>
-        <ul class="space-y-3">
+        <p class="text-muted text-sm mb-4 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Greenville, South Carolina
+        </p>
+        <ul class="space-y-3 text-muted">
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-accent mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Developed features for award-winning web platform with smart device connections for global automobile manufacturers</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Created cloud platform for tax automation with interfaces to different vendors</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-accent mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Improved performance: 200kb less for start page load, 11 seconds off page load on 3G</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-accent mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Led 20+ people as Test Manager for major fashion & home discount retailer</span>
           </li>
         </ul>
@@ -94,32 +124,40 @@
     </div>
 
     <!-- Arvato Systems - Software Developer -->
-    <div class="group relative pl-8 border-l-2 border-gray-200 hover:border-accent transition-colors duration-300">
-      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-white border-2 border-gray-300 group-hover:border-accent group-hover:bg-accent/20 transition-colors duration-300"></div>
-      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+    <div class="group relative pl-8 border-l-2 border-secondary/10 hover:border-sage/40 transition-colors duration-300">
+      <div class="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-cream border-2 border-secondary/20 group-hover:border-sage group-hover:bg-sage/20 transition-colors duration-300"></div>
+      <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-secondary/5 hover:border-sage/15 hover:shadow-soft transition-all duration-300 card-hover">
         <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
           <div>
-            <h3 class="text-2xl font-bold text-[#090b11]">Software Developer</h3>
-            <p class="text-accent font-semibold">Arvato Systems</p>
+            <h3 class="text-xl md:text-2xl font-bold text-secondary">Software Developer</h3>
+            <p class="text-sage font-semibold">Arvato Systems</p>
           </div>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full whitespace-nowrap">Sep 2012 - Jul 2017</span>
+          <span class="px-3 py-1 bg-secondary/5 text-muted text-sm rounded-full whitespace-nowrap">Sep 2012 - Jul 2017</span>
         </div>
-        <p class="text-gray-500 mb-4">Leipzig, Germany</p>
-        <ul class="space-y-3">
+        <p class="text-muted text-sm mb-4 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Leipzig, Germany
+        </p>
+        <ul class="space-y-3 text-muted">
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Built, tested and deployed modern software products</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-sage mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Built native cross-platform applications with web technologies and Electron</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
-            <span>Worked with SAP Business Suite and SAP ArchiveLink for archiving solutions</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-accent mt-1">→</span>
+            <span class="text-sage mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </span>
             <span>Collaborated with large teams across the country to build scalable web platforms</span>
           </li>
         </ul>
@@ -128,76 +166,102 @@
   </div>
 
   <!-- Side Project Highlight -->
-  <div class="bg-gradient-to-br from-[#090b11] to-[#1a1f35] rounded-3xl p-8 md:p-12 text-white">
-    <div class="flex flex-wrap items-center gap-3 mb-4">
-      <span class="px-4 py-1.5 bg-accent text-white text-sm font-semibold rounded-full">Side Project</span>
-    </div>
-    <h2 class="text-2xl md:text-3xl font-bold mb-4">Next-Generation HMR Tool</h2>
-    <p class="text-gray-300 leading-relaxed max-w-3xl mb-6">
-      Developing a next-generation Hot Module Replacement and React Fast Refresh tool that enables developers to focus on specific components and iterate on code without losing state or context. Creating a fluid and seamless development experience that removes wait time and distractions.
-    </p>
-    <div class="flex flex-wrap gap-3">
-      <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm">React</span>
-      <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm">TypeScript</span>
-      <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm">HMR</span>
-      <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm">Developer Tools</span>
+  <div class="relative overflow-hidden bg-gradient-to-br from-secondary to-dark rounded-3xl p-8 md:p-12 text-white">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
+    <div class="relative">
+      <span class="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium rounded-full mb-6">Side Project</span>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Next-Generation HMR Tool</h2>
+      <p class="text-white/70 leading-relaxed max-w-3xl mb-8">
+        Developing a next-generation Hot Module Replacement and React Fast Refresh tool that enables developers to focus on specific components and iterate on code without losing state or context. Creating a fluid and seamless development experience.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">React</span>
+        <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">TypeScript</span>
+        <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">HMR</span>
+        <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">Developer Tools</span>
+      </div>
     </div>
   </div>
 
-  <!-- Skills & Technologies -->
-  <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
-    <div class="space-y-2 mb-8">
-      <p class="text-accent font-medium tracking-wide">EXPERTISE</p>
-      <h2 class="text-3xl text-[#090b11] font-bold">Technologies & Skills</h2>
+  <!-- Skills Grid -->
+  <div class="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-secondary/5">
+    <div class="text-center mb-8">
+      <span class="text-primary font-medium tracking-wide text-sm uppercase">Expertise</span>
+      <h2 class="text-2xl md:text-3xl font-bold text-secondary mt-2">Technologies & Skills</h2>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">⚛️</span>
-        <span class="font-medium text-sm text-center">React</span>
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-primary/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+          <span class="text-lg">⚛️</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">React</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">📘</span>
-        <span class="font-medium text-sm text-center">TypeScript</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-primary/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+          <span class="text-lg">📘</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">TypeScript</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🅰️</span>
-        <span class="font-medium text-sm text-center">Angular</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-accent/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+          <span class="text-lg">🅰️</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Angular</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🟢</span>
-        <span class="font-medium text-sm text-center">Node.js</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-sage/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center">
+          <span class="text-lg">🟢</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Node.js</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🚀</span>
-        <span class="font-medium text-sm text-center">NestJS</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-primary/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+          <span class="text-lg">🚀</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">NestJS</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">⚡</span>
-        <span class="font-medium text-sm text-center">Gatsby</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-accent/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+          <span class="text-lg">⚡</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Gatsby</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🎨</span>
-        <span class="font-medium text-sm text-center">CSS/Tailwind</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-sage/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center">
+          <span class="text-lg">🎨</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Tailwind</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🧪</span>
-        <span class="font-medium text-sm text-center">Testing</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-primary/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+          <span class="text-lg">🧪</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Testing</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">♿</span>
-        <span class="font-medium text-sm text-center">Accessibility</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-accent/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+          <span class="text-lg">♿</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">A11y</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">📊</span>
-        <span class="font-medium text-sm text-center">Performance</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-sage/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center">
+          <span class="text-lg">📊</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">Performance</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🔧</span>
-        <span class="font-medium text-sm text-center">CI/CD</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-primary/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+          <span class="text-lg">🔧</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">CI/CD</span>
       </div>
-      <div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-accent/10 transition-colors">
-        <span class="text-2xl">🌐</span>
-        <span class="font-medium text-sm text-center">PWA</span>
+      <div class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/80 border border-secondary/5 hover:border-accent/20 hover:shadow-soft transition-all duration-300">
+        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
+          <span class="text-lg">🌐</span>
+        </div>
+        <span class="font-medium text-sm text-secondary">PWA</span>
       </div>
     </div>
   </div>
