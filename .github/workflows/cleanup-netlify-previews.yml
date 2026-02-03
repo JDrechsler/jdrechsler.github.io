@@ -1,0 +1,43 @@
+name: Cleanup Netlify Deploy Previews
+
+on:
+  # Run daily at midnight UTC
+  schedule:
+    - cron: '0 0 * * *'
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete old deploy previews
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          # Get deploys older than 1 day (86400 seconds)
+          MAX_AGE_SECONDS=86400
+          CURRENT_TIME=$(date +%s)
+
+          echo "Fetching deploy previews..."
+
+          # Get all deploys and filter for deploy-previews
+          DEPLOYS=$(curl -s -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+            "https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID/deploys?per_page=100")
+
+          # Parse and delete old deploy previews
+          echo "$DEPLOYS" | jq -r '.[] | select(.context == "deploy-preview") | "\(.id) \(.created_at)"' | while read -r ID CREATED_AT; do
+            if [ -n "$ID" ] && [ -n "$CREATED_AT" ]; then
+              DEPLOY_TIME=$(date -d "$CREATED_AT" +%s 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%S" "${CREATED_AT%.*}" +%s 2>/dev/null)
+              AGE=$((CURRENT_TIME - DEPLOY_TIME))
+
+              if [ "$AGE" -gt "$MAX_AGE_SECONDS" ]; then
+                echo "Deleting deploy preview $ID (age: $((AGE / 3600)) hours)"
+                curl -s -X DELETE -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+                  "https://api.netlify.com/api/v1/deploys/$ID"
+              fi
+            fi
+          done
+
+          echo "Cleanup complete!"
